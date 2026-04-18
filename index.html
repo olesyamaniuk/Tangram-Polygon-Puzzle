@@ -1,331 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <title></title>
-    <link rel="icon" href="img" />
+    <title>Tangram Polygon Puzzle | Relaxing Shape-Fitting Brain Game</title>
+    <meta
+      name="description"
+      content="Tangram Polygon Puzzle is a relaxing and challenging shape-fitting brain game. Fill polygon frames, rotate pieces, and improve your spatial reasoning skills. Play offline anytime."
+    />
+    <meta
+      name="keywords"
+      content="tangram puzzle game, polygon puzzle, shape fitting game, brain training puzzle, relaxing logic game, offline puzzle game"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/1.png" />
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <div id="cookie-popup" class="class-cookie-popup">
-      <div class="class-cookie-popup-container">
-        <p class="class-cookie-popup-text-two">
-          We use cookies to improve your experience on our website. By browsing
-          this website, you agree to our use of cookies.
-        </p>
-        <div class="class-cookie-button-container">
-          <button id="accept-cookies" class="class-cookie-button">
-            Accept cookies
-          </button>
-          <button id="decline-cookies" class="class-cookie-button">
-            Decline Cookies
-          </button>
-        </div>
-      </div>
-    </div>
-    <header class="class-header">
-      <div class="class-header-background"></div>
-      <nav class="class-navigation">
-        <ul class="class-navigation-list">
-          <li class="class-navigation-item">
-            <a href="/" class="class-navigation-link">
+    <header class="o-y-header">
+      <div class="o-y-header-background"></div>
+      <nav class="o-y-navigation">
+        <ul class="o-y-navigation-list">
+          <li class="o-y-navigation-item">
+            <a href="/" class="o-y-navigation-link">
               <img
-                class="class-title-img class-navigation-img"
+                class="o-y-title-img o-y-navigation-img"
                 alt="logo"
-                src="img"
-                style=""
+                src="img/1.png"
+                style="
+                  width: 65px;
+                  height: 65px;
+
+                  border-radius: 20px;
+                "
               />
             </a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/" class="class-navigation-link">Home</a>
+
+          <li class="o-y-navigation-item">
+            <a href="/#about" class="o-y-navigation-link">About</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#about" class="class-navigation-link">About the Game</a>
+          <li class="o-y-navigation-item">
+            <a href="/#why" class="o-y-navigation-link">Features</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#why" class="class-navigation-link">Why Us?</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#uniqueness" class="class-navigation-link"
-              >Our Uniqueness</a
-            >
+          <li class="o-y-navigation-item">
+            <a href="/#uniqueness" class="o-y-navigation-link">How To Play</a>
           </li>
 
-          <li class="class-navigation-item">
-            <a href="/#how" class="class-navigation-link">How to Play</a>
+          <li class="o-y-navigation-item">
+            <a href="/#how" class="o-y-navigation-link">Benefits</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#characters" class="class-navigation-link">Characters</a>
+          <li class="o-y-navigation-item">
+            <a href="/#faq" class="o-y-navigation-link">FAQ</a>
           </li>
-          <li class="class-navigation-item">
-            <a href="/#reviews" class="class-navigation-link">User Reviews</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#faq" class="class-navigation-link">FAQ</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#gallery" class="class-navigation-link">Gallery</a>
-          </li>
-          <li class="class-navigation-item">
-            <a href="/#features" class="class-navigation-link">Features</a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/policy.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Privacy Policy
-            </a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/terms.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Terms and Conditions
-            </a>
-          </li>
-          <li class="class-navigation-item">
-            <a
-              href="/cookies.html"
-              class="class-navigation-link class-navigation-item-desk"
-            >
-              Cookies Policy
-            </a>
+          <li class="o-y-navigation-item">
+            <a href="/#characters" class="o-y-navigation-link">Contact</a>
           </li>
         </ul>
 
-        <div class="class-header-button-wrapper">
-          <a href="/" class="class-policy-terms-header-icon-menu">
+        <div class="o-y-header-button-wrapper">
+          <a href="/" class="o-y-policy-terms-header-icon-menu">
             <img
               href="/"
-              class="class-title-img"
+              class="o-y-title-img"
               alt="logo"
-              src="img"
-              style=""
+              src="img/1.png"
+              style="
+                width: 52px;
+                height: 52px;
+
+                border-radius: 20px;
+              "
             />
           </a>
 
-          <button
-            type="button"
-            class="class-header-icon-button"
-            data-menu-button
-          >
-            <img
-              class="class-header-icon class-header-icon-menu"
-              src="img/header/menu.png"
-              style=""
-              alt="menu "
-            />
-            <img
-              class="class-header-icon class-header-icon-close"
-              src="img/header/menu (1).png"
-              alt="close"
-            />
+          <button type="button" class="o-y-header-icon-button" data-menu-button>
+            <svg
+              class="o-y-header-icon o-y-header-icon-menu"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 5H20M4 12H20M4 19H20"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              class="o-y-header-icon o-y-header-icon-close"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 30L6 6M30 6L6 30"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
           </button>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="class-home" id="home">
-        <div class="class-home-container">
-          <div class="class-home-container-top">
-            <h1>
-              <img class="class-home-title-img" src="/img/home" alt="" />
-            </h1>
-            <p class="class-home-title">Merge Food - Chef Decoration</p>
-            <p class="class-home-text">
-              Cook, Merge, and Create Your Dream Kitchen!
+      <section class="o-y-home" id="home">
+        <div class="o-y-home-container">
+          <div class="o-y-home-container-top">
+            <h1 class="o-y-home-title">Fill the Shape. Snap It Into Place.</h1>
+            <p class="o-y-home-text">
+              Tangram Polygon Puzzle is a one of those games that's chill but
+              will definitely mess with your head where you place fragmented
+              pieces into a perfect polygon frame.
             </p>
-            <a class="class-home-link" href="#" target="_blank">
-              <img class="class-home-img" src="./img/home" alt="google play" />
+            <p class="o-y-home-text-two">
+              Easy to pick up, but you'll be surprised how tricky it gets!
+            </p>
+            <a
+              class="o-y-home-link"
+              href="https://play.google.com/store/apps/details?id=com.nextsupercore.tangrampolygonpuzzle&hl=en&gl=us"
+              target="_blank"
+              >Play Now!
             </a>
           </div>
         </div>
       </section>
-      <section class="class-about" id="about">
-        <div class="class-about-container">
-          <h2 class="class-about-title">About the Game</h2>
-          <p class="class-about-text">
-            <span class="class-about-text-bold"
-              >Merge Food - Chef Decoration</span
-            >
-            combines the
-          </p>
-        </div>
-      </section>
-      <article class="class-why" id="why">
-        <span style="display: none"
-          >Generated: 2025-04-12, Hash: class-qk-class-39fd7x</span
-        >
-
-        <div class="class-why-container">
-          <h2 class="class-about-title">Why Us?</h2>
-          <dl class="class-why-list">
-            <div class="class-why-item">
-              <figure class="class-why-img">
-                <img class="class-why-img" src="img/why" alt="" />
-              </figure>
-              <div>
-                <dt class="class-why-text-bold">Fun and Relaxing:</dt>
-                <dd class="class-why-text">Perfect for unwinding after a</dd>
-              </div>
-            </div>
-          </dl>
-        </div>
-      </article>
-      <section class="class-uniqueness" id="uniqueness">
-        <div class="class-uniqueness-container">
-          <h2 class="class-about-title">Our Uniqueness</h2>
-          <div class="class-uniqueness-list">
-            <div class="class-uniqueness-item">
-              <img class="class-uniqueness-img" src="" alt="" />
-              <p class="class-uniqueness-text-bold">1. Food Fusion Fun</p>
-              <p class="class-uniqueness-text">
-                Discover unexpected recipes and combinations by merging
-                ingredients.
+      <section class="o-y-about" id="about">
+        <div class="o-y-about-container">
+          <div class="o-y-about-container-div">
+            <h2 class="o-y-about-title">About the Game</h2>
+            <div class="o-y-about-div">
+              <ul class="o-y-about-text">
+                <li>
+                  Tangram Polygon Puzzle takes the best parts of jigsaw puzzles
+                  and mixes them with geometry puzzles.
+                </li>
+                <li>
+                  Each level presents an empty square or polygon frame and a set
+                  of fragmented shapes. Your task is to place every piece
+                  perfectly inside the outline. Sometimes you’ll need to rotate
+                  them. Sometimes reflect them. Sometimes rethink your entire
+                  approach.
+                </li>
+                <li>
+                  No rush, no annoying beeps - just you figuring out where these
+                  damn pieces go. Fair warning though, you might lose track of
+                  time.
+                </li>
+              </ul>
+              <p class="o-y-about-text-bold">
+                It’s a quiet challenge for a focused mind.
               </p>
             </div>
           </div>
         </div>
       </section>
+      <article class="o-y-why" id="why">
+        <span style="display: none"
+          >Generated: 2026-04-18, Hash: o-y-qk-o-y-39fd7x</span
+        >
 
-      <section class="class-how" id="how">
-        <div class="class-how-container">
-          <h2 class="class-about-title">How to Play</h2>
-
-          <ul class="class-how-list">
-            <li class="class-how-item">
-              <img
-                class="class-how-img"
-                src="/img/how/image (1).png"
-                alt="image"
-              />
-              <p class="class-how-text-bold">Merge Ingredients:</p>
-              <p class="class-how-text">
-                Drag and merge identical food items to discover new recipes.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-characters" id="characters">
-        <div class="class-characters-container">
-          <h2 class="class-about-title">Characters</h2>
-          <ul class="class-characters-list">
-            <li class="class-characters-item">
-              <img class="class-characters-img" src="" alt="" />
-              <p class="class-characters-text-bold">Chef Bella:</p>
-              <p class="class-characters-text">
-                A cheerful pastry chef who inspires creativity in the kitchen
-                with her love for desserts.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-reviews" id="reviews">
-        <div class="class-reviews-container">
-          <h2 class="class-about-title">Reviews</h2>
-          <ul class="class-reviews-list">
-            <li class="class-reviews-item">
-              <div class="class-reviews-item-top">
+        <div class="o-y-why-container">
+          <h2 class="o-y-about-title">Simple Rules</h2>
+          <dl class="o-y-why-lists">
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Simple Rules</dt>
+              <dd class="o-y-why-text">
+                Fill the empty shape by placing all pieces inside the square or
+                polygon frame. Use pieces exactly as they are — or rotate and
+                reflect them when needed.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Addictive Brain Training</dt>
+              <dd class="o-y-why-text">
+                Visualize how pieces connect. Train your spatial reasoning and
+                improve logical thinking naturally.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Clean Design & Smooth Controls</dt>
+              <dd class="o-y-why-text">
+                Clean look, easy controls, and that little 'snap' when you nail
+                it.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Hint Support</dt>
+              <dd class="o-y-why-text">
+                Use hints if you get stuck. They guide your thinking without
+                removing the challenge.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Offline Play</dt>
+              <dd class="o-y-why-text">
+                Play most stages without internet connection. Ideal for travel,
+                commuting, or relaxing breaks.
+              </dd>
+            </div>
+          </dl>
+          <dl class="o-y-why-list">
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Simple Rules</dt>
+              <dd class="o-y-why-text">
+                Fill the empty shape by placing all pieces inside the square or
+                polygon frame. Use pieces exactly as they are — or rotate and
+                reflect them when needed.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Addictive Brain Training</dt>
+              <dd class="o-y-why-text">
+                Visualize how pieces connect. Train your spatial reasoning and
+                improve logical thinking naturally.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Clean Design & Smooth Controls</dt>
+              <dd class="o-y-why-text">
+                Clean look, easy controls, and that little 'snap' when you nail
+                it.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Hint Support</dt>
+              <dd class="o-y-why-text">
+                Use hints if you get stuck. They guide your thinking without
+                removing the challenge.
+              </dd>
+            </div>
+            <div class="o-y-why-item">
+              <dt class="o-y-why-text-bold">Offline Play</dt>
+              <dd class="o-y-why-text">
+                Play most stages without internet connection. Ideal for travel,
+                commuting, or relaxing breaks.
+              </dd>
+            </div>
+          </dl>
+          <div class="o-y-gallery-button-container">
+            <button class="o-y-gallery-button o-y-gallery-list-left">
+              <figure>
                 <img
-                  class="class-reviews-img"
-                  src="/img/reviews/image 12.png"
-                  alt="image"
+                  class="o-y-gallery-button-icon"
+                  src="img/Group 2.png"
+                  alt="left button"
                 />
-                <p class="class-reviews-text-bold">GourmetGamer:</p>
-              </div>
-              <p class="class-reviews-text">
-                "This game is so addictive! I love discovering new recipes and
-                decorating my kitchen."
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="class-faq" id="faq">
-        <div class="class-faq-container">
-          <h2 class="class-about-title">FAQ</h2>
-          <ul class="class-faq-list">
-            <li class="class-faq-item">
-              <div class="class-faq-question" onclick="toggleAnswer(this)">
-                <span>Is "Merge Food - Chef Decoration" free to play?</span>
-                <button class="class-toggle-button">
-                  <img src="/img/faq/icon.png" alt="Toggle" />
-                </button>
-              </div>
-              <div class="class-faq-answer">
-                Yes, the game is free to play with optional in-app purchases for
-                special items.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="class-gallery" id="gallery">
-        <div class="class-gallery-container">
-          <h2 class="class-about-title">Gallery</h2>
-
-          <ul class="class-gallery-list">
-            <li class="class-gallery-item">
-              <img
-                class="class-gallery-image"
-                src="./img/gallery/3.png"
-                alt="gallery image"
-              />
-            </li>
-          </ul>
-          <div class="class-gallery-button-container">
-            <button class="class-gallery-button class-gallery-list-left">
-              <img
-                class="class-gallery-button-icon"
-                src="img"
-                alt="left button"
-              />
+              </figure>
             </button>
-            <button class="class-gallery-button class-gallery-list-right">
+            <button class="o-y-gallery-button o-y-gallery-list-right">
               <img
-                class="class-gallery-button-icon"
-                src="img"
+                class="o-y-gallery-button-icon"
+                src="img/Group 3.png"
                 alt="right button"
               />
             </button>
           </div>
         </div>
-      </section>
-      <section class="class-features" id="features">
-        <div class="class-features-container">
-          <h2 class="class-about-title">Features</h2>
-
-          <ul class="class-features-list">
-            <li class="class-features-item">
-              <p class="class-features-text-bold">Daily Quests</p>
-              <img
-                class="class-features-img"
-                src="/img/features/image (2).png"
-                alt="image"
-              />
-              <p class="class-features-text">
-                Complete tasks for extra rewards.
+      </article>
+      <section class="o-y-uniqueness" id="uniqueness">
+        <div class="o-y-uniqueness-container">
+          <h2 class="o-y-about-title">How To Play</h2>
+          <div class="o-y-uniqueness-list">
+            <div class="o-y-uniqueness-item">
+              <p class="o-y-uniqueness-text-bold">1</p>
+              <p class="o-y-uniqueness-text">
+                Study the empty frame carefully.
               </p>
-            </li>
-          </ul>
+            </div>
+            <div class="o-y-uniqueness-item">
+              <p class="o-y-uniqueness-text-bold">2</p>
+              <p class="o-y-uniqueness-text">Drag pieces onto the board.</p>
+            </div>
+            <div class="o-y-uniqueness-item">
+              <p class="o-y-uniqueness-text-bold">3</p>
+              <p class="o-y-uniqueness-text">
+                Rotate or reflect them if needed.
+              </p>
+            </div>
+            <div class="o-y-uniqueness-item">
+              <p class="o-y-uniqueness-text-bold">4</p>
+              <p class="o-y-uniqueness-text">
+                Fit all shapes perfectly into the frame.
+              </p>
+            </div>
+            <div class="o-y-uniqueness-item">
+              <p class="o-y-uniqueness-text-bold">5</p>
+              <p class="o-y-uniqueness-text">
+                Complete the puzzle and move forward.
+              </p>
+            </div>
+          </div>
+          <p class="o-y-uniqueness-text-two">
+            When you solve it, there's this really satisfying little snap sound
+            that just feels perfect.
+          </p>
+        </div>
+      </section>
+
+      <section class="o-y-how" id="how">
+        <div class="o-y-how-container">
+          <h2 class="o-y-about-title">Brain Benefits</h2>
+          <div class="o-y-how-div">
+            <p class="o-y-how-text-bold-two">
+              Tangram Polygon Puzzle is more than entertainment.
+            </p>
+            <p class="o-y-how-text-bold-one">You'll actually get better at:</p>
+            <ul class="o-y-how-list">
+              <li class="o-y-how-item">
+                <img class="o-y-how-img" src="/img/Container.png" alt="image" />
+                <p class="o-y-how-text">Spatial awareness</p>
+              </li>
+              <li class="o-y-how-item">
+                <img class="o-y-how-img" src="/img/Container.png" alt="image" />
+                <p class="o-y-how-text">Pattern recognition</p>
+              </li>
+              <li class="o-y-how-item">
+                <img class="o-y-how-img" src="/img/Container.png" alt="image" />
+                <p class="o-y-how-text">Logical deduction</p>
+              </li>
+              <li class="o-y-how-item">
+                <img class="o-y-how-img" src="/img/Container.png" alt="image" />
+                <p class="o-y-how-text">Focus and concentration</p>
+              </li>
+              <li class="o-y-how-item">
+                <img class="o-y-how-img" src="/img/Container.png" alt="image" />
+                <p class="o-y-how-text">Visual imagination</p>
+              </li>
+            </ul>
+            <p class="o-y-how-text-bold">
+              You might even start looking at your furniture differently - like,
+              will this couch actually fit through my door?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="o-y-faq-two" id="faq">
+        <div class="o-y-faq">
+          <div class="o-y-faq-container">
+            <h2 class="o-y-about-title">FAQ</h2>
+            <ul class="o-y-faq-list">
+              <li class="o-y-faq-item">
+                <div class="o-y-faq-question" onclick="toggleAnswer(this)">
+                  <span>Is Tangram Polygon Puzzle beginner-friendly?</span>
+                  <button class="o-y-toggle-button">
+                    <img src="/img/Container (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="o-y-faq-answer">
+                  Yes. The game starts with simple layouts that help you
+                  understand the mechanics. As you progress, puzzles gradually
+                  become more complex. So whether you're just starting out or
+                  you've been doing puzzles forever, you'll find your groove.
+                </div>
+              </li>
+              <li class="o-y-faq-item">
+                <div class="o-y-faq-question" onclick="toggleAnswer(this)">
+                  <span>Do I need internet to play?</span>
+                  <button class="o-y-toggle-button">
+                    <img src="/img/Container (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="o-y-faq-answer">
+                  Most levels are fully playable offline. Once installed, you
+                  can enjoy puzzles anywhere. This makes it perfect for travel,
+                  daily commutes, or quiet downtime.
+                </div>
+              </li>
+              <li class="o-y-faq-item">
+                <div class="o-y-faq-question" onclick="toggleAnswer(this)">
+                  <span>Can pieces be rotated and reflected?</span>
+                  <button class="o-y-toggle-button">
+                    <img src="/img/Container (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="o-y-faq-answer">
+                  Yes. Many puzzles require rotation and reflection to solve
+                  correctly. This makes things way more interesting than just
+                  dropping pieces in place.
+                </div>
+              </li>
+              <li class="o-y-faq-item">
+                <div class="o-y-faq-question" onclick="toggleAnswer(this)">
+                  <span>What happens if I get stuck?</span>
+                  <button class="o-y-toggle-button">
+                    <img src="/img/Container (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="o-y-faq-answer">
+                  You can use hints to guide your next move. Hints provide
+                  helpful direction without automatically solving the puzzle.
+                  They'll point you in the right direction without just giving
+                  you the answer.
+                </div>
+              </li>
+              <li class="o-y-faq-item">
+                <div class="o-y-faq-question" onclick="toggleAnswer(this)">
+                  <span>Is it suitable for all ages?</span>
+                  <button class="o-y-toggle-button">
+                    <img src="/img/Container (1).png" alt="Toggle" />
+                  </button>
+                </div>
+                <div class="o-y-faq-answer">
+                  Yes. Kids can figure out the controls easily, but it gets hard
+                  enough to keep grown-ups hooked too. It’s designed as a
+                  universal brain-training experience.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="o-y-characters" id="characters">
+        <div class="o-y-characters-container">
+          <h2 class="o-y-about-title">Contact</h2>
+
+          <p class="o-y-characters-text-bold">For support or feedback:</p>
+          <a class="o-y-characters-link" href="mailto:info@plainledger.site"
+            >info@plainledger.site</a
+          >
+          <p class="o-y-characters-text">
+            We're always happy to hear from puzzle players.
+          </p>
         </div>
       </section>
     </main>
-
+    <footer class="o-y-footer" style="margin: auto; background: #08162c">
+      <div class="o-y-footer-container">
+        <ul class="o-y-footer-div">
+          <li>
+            <a href="/" class="o-y-footer-navigation-link">Home</a>
+          </li>
+          <li class="o-y-footer-navigation-link-two">|</li>
+          <li>
+            <a href="/#about" class="o-y-footer-navigation-link">About</a>
+          </li>
+          <li class="o-y-footer-navigation-link-two">|</li>
+          <li>
+            <a href="/#why" class="o-y-footer-navigation-link">Features</a>
+          </li>
+          <li class="o-y-footer-navigation-link-two">|</li>
+          <li>
+            <a href="/#uniqueness" class="o-y-footer-navigation-link"
+              >How To Play</a
+            >
+          </li>
+          <li class="o-y-footer-navigation-link-two">|</li>
+          <li>
+            <a href="/#how" class="o-y-footer-navigation-link">Benefits</a>
+          </li>
+          <li class="o-y-footer-navigation-link-two">|</li>
+          <li>
+            <a href="/#faq" class="o-y-footer-navigation-link">FAQ</a>
+          </li>
+          <li class="o-y-footer-navigation-link-two">|</li>
+          <li>
+            <a href="/#characters" class="o-y-footer-navigation-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="o-y-footer-wrapper">
+          <a class="o-y-footer-text" href="/terms.html">Terms & Conditions </a>
+          <a class="o-y-footer-text" href="/policy.html">Privacy Policy</a>
+        </div>
+        <p class="o-y-footer-copyright">
+          © 2026 Tangram Polygon Puzzle. All rights reserved.
+        </p>
+      </div>
+    </footer>
     <script src="js/mobile-menu.js"></script>
-    <script src="js/jquery-loc-class-0.js"></script>
+    <script src="js/jquery-loc-o-y-0.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
   </body>
