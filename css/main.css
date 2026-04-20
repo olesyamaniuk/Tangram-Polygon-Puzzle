@@ -278,7 +278,6 @@ a {
   margin: auto;
 }
 .o-y-home-container {
-  width: 375px;
   padding: 272px 0px 0px;
   margin: auto;
 }
@@ -349,12 +348,11 @@ a {
 
 @media screen and (min-width: 1210px) {
   .o-y-home {
-    width: 1440px;
+    width: auto;
     height: 860px;
     background-image: url("/img/Frame\ 72.png");
   }
   .o-y-home-container {
-    width: 1440px;
     padding: 230px 272px 0px;
   }
   .o-y-home-container-top {
